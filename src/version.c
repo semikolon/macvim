@@ -2419,6 +2419,7 @@ intro_message(colon)
     int		blanklines;
     int		sponsor;
     char	*p;
+    /*
     static char	*(lines[]) =
     {
 	N_("VIM - Vi IMproved"),
@@ -2447,6 +2448,8 @@ intro_message(colon)
 	N_("type  :set nocp<Enter>        for Vim defaults"),
 	N_("type  :help cp-default<Enter> for info on this"),
     };
+    */
+    static char	*(lines[]) = {};
 #ifdef FEAT_GUI
     static char	*(gui_lines[]) =
     {
