@@ -3389,8 +3389,9 @@ main() {
   exit(0);
 }],
 AC_MSG_RESULT(ok),
-AC_MSG_ERROR([WRONG!  uint32_t not defined correctly.]),
-AC_MSG_WARN([cannot check uint32_t when cross-compiling.]))
+#AC_MSG_ERROR([WRONG!  uint32_t not defined correctly.]),
+AC_MSG_WARN([cannot check uint32_t when cross-compiling.])),
+AC_MSG_RESULT([assuming ok]))
 
 dnl Check for memmove() before bcopy(), makes memmove() be used when both are
 dnl present, fixes problem with incompatibility between Solaris 2.4 and 2.5.
